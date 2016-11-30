@@ -45,7 +45,7 @@ namespace IdentitySample.Models
 
     public class LoginViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Completa el hermoso campo email")]
         [Display(Name = "Email")]
         [EmailAddress]
         public string Email { get; set; }
